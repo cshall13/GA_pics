@@ -9,7 +9,7 @@
 		#gallery-wrapper{
 			text-align: center;
 		}
-		#middle-section img{
+		img{			
 			width:  15%;
 			border: 4px solid #0f0;
 
@@ -19,6 +19,18 @@
 		}
 		#bottom-section img{
 			width: 55%;
+		}
+
+		.caption{
+			font-size: 20px;
+			font-weight: bold;
+			text-shadow: 10px;
+			color: red;
+		}
+
+		.caption.two{
+			color: blue;
+			border: 2px solid #000; 
 		}
 	
 	</style>
@@ -33,11 +45,17 @@
 			</h1>
 		</div>		
 		<div id="middle-section">
-			<img src="./ga_pics/arabia_mnt.jpg" onclick="bigPic.src = this.src" />
-			<img src="./ga_pics/callaway_gardens.jpg" onclick="bigPic.src = this.src"/>
-			<img src="./ga_pics/Etowah_Indian_Mounds.jpg" onclick="bigPic.src = this.src"/>
-			<img src="./ga_pics/prov_state_canyon.jpg" onclick="bigPic.src = this.src"/>
-			<img src="./ga_pics/wormsloe.jpg" onclick="bigPic.src = this.src"/>
+			<div class="caption one">
+				This is a caption!
+			</div>
+			<div class="caption two">
+				This is a caption!
+			</div>
+			<img class="one" src="./ga_pics/arabia_mnt.jpg" onclick="bigPic.src = this.src" />
+			<img class="two" src="./ga_pics/callaway_gardens.jpg" onclick="bigPic.src = this.src"/>
+			<img class="three" src="./ga_pics/Etowah_Indian_Mounds.jpg" onclick="bigPic.src = this.src"/>
+			<img class="four" src="./ga_pics/prov_state_canyon.jpg" onclick="bigPic.src = this.src"/>
+			<img class="five" src="./ga_pics/wormsloe.jpg" onclick="bigPic.src = this.src"/>
 		</div>
 		<div id="bottom-section">
 			<img src="./ga_pics/arabia_mnt.jpg" name="bigPic" />
