@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AAAAAHA</title>
+	<style type="text/css" media="screen">
+		#gallery_wrapper{
+			text-align: center;		
+		}
+		#middle_section img{
+			width: 78%;
+			border: 6px solid #D3D3D3;			
+		}
+		#bottom_section img{			
+			width: 15%;
+			height: 120px;
+			border: 4px solid #000;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="gallery_wrapper">
+		<div id="top_section">
+			<h1>GoPro Doing Work</h1>
+		</div>
+		
+		 <div id="middle_section">
+		 	<img src="./practice_pics/surfer.jpg" name="mainPic" />
+		</div>
+		
+		<div id="bottom_section">			
+			<img src="./practice_pics/crazy_cool.jpg" onclick="mainPic.src = this.src" />
+			<img src="./practice_pics/flying.jpg" onclick="mainPic.src = this.src" />
+			<img src="./practice_pics/shark.jpg" onclick="mainPic.src = this.src" />
+			<img src="./practice_pics/surfer.jpg" onclick="mainPic.src = this.src" />
+		</div>
+		
+	</div>
+
+</body>
+</html>
